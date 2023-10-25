@@ -1,0 +1,9 @@
+Instalacion para el visualizar en navegador:
+npm install react-dom react-native-web
+
+Instalar en carpeta del proyecto:
+npm install react-native-web
+
+Inciar proyecto:
+npx expo start --tunnel
+
