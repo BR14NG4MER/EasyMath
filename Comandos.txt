@@ -7,3 +7,9 @@ npm install react-native-web
 Inciar proyecto:
 npx expo start --tunnel
 
+React Navigation
+npm install @react-navigation/native
+npm install @react-navigation/native-stack
+
+Dependencias para Expo
+npx expo install react-native-screens react-native-safe-area-contex
