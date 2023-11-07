@@ -37,6 +37,30 @@ export function CustomButton(props) {
     )
 }
 
+export function ButtonLevel(props) {
+
+    const { text, onPress } = props
+
+    return (
+        <TouchableOpacity
+            style = {
+                styles.buttonlevel
+            }
+            onPress={onPress}
+        >
+            <Text
+                style = {{
+                    ...styles.text,
+                    color: '#000AFF',
+                    fontSize: 50
+                }}
+            >
+                {text}
+            </Text>
+        </TouchableOpacity>
+    )
+}
+
 const styles = StyleSheet.create({
     
     button1: {
@@ -45,7 +69,15 @@ const styles = StyleSheet.create({
         margin: 10,
     },
     buttonlevel: {
-        margin: 10
+        width: 100,
+        height: 100,
+        margin: 10,
+        backgroundColor: '#10895D',
+        justifyContent: 'center',
+        alignItems: 'center',
+        borderRadius: 15,
+        borderWidth: 3,
+        borderColor: '#C30303',
     },
     text: {
         fontSize: 20,

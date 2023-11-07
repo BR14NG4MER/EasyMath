@@ -13,7 +13,7 @@ const LoginScreen = () => {
       <View style={Styles.container}>
         <ImageBackground source={require("../Imagenes/Fondo.png")} style={Styles.Fondo}>
           <View style={{ flex: 1, alignItems: 'center' }}>
-            <Text style={[Styles.title, {margin: 10}]}>EasyMath</Text>
+            <Text style={{...Styles.title, margin: 10}}>EasyMath</Text>
           </View>
   
           <View style={{ flex: 2, alignItems: 'center'}}>

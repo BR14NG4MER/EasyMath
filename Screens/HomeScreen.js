@@ -44,7 +44,7 @@ const HomeScreen = () => {
         <View style={{flex: 4, backgroundColor: '#35339C'}}>
           <View style={{flex: 1, justifyContent: 'center'}}>
             <View style={[Styles.row, {justifyContent: 'space-around'}]}>
-              <CustomButton backgroundColor='#1167E9' text="Sumas" color='#f1f1f1' onPress={() => navigation.navigate('Home')}/>
+              <CustomButton backgroundColor='#1167E9' text="Sumas" color='#f1f1f1' onPress={() => navigation.navigate('Sumas')}/>
               <CustomButton backgroundColor='#1167E9' text="Restas" color='#f1f1f1' onPress={() => navigation.navigate('Home')}/>
             </View>
           </View>

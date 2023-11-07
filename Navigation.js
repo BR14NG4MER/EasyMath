@@ -7,6 +7,7 @@ import LoginScreen from "./Screens/LoginScreen"
 import RecoveryScreen from "./Screens/RecoveryScreen"
 import RecoveryMessage from "./Screens/RecoveryMessage"
 import HomeScreen from "./Screens/HomeScreen"
+import SumasLevels from "./Screens/SumasLevels"
 
 const Stack = createNativeStackNavigator();
 
@@ -31,6 +32,11 @@ function Stacks() {
       <Stack.Screen
         name="Home"
         component={HomeScreen}
+        options={{headerShown: false}}
+      />
+      <Stack.Screen
+        name="Sumas"
+        component={SumasLevels}
       />
     </Stack.Navigator>
   )

@@ -1,0 +1,97 @@
+import * as React from "react"
+import { View, Text, Image, Alert } from "react-native"
+import Styles from "../Componentes/Styles"
+import { ButtonLevel } from "../Componentes/Buttons"
+
+const SumasLevels = () => {
+    
+    return (
+        <View 
+            style = {{
+                ...Styles.container
+            }}
+        >
+            <View 
+                style = {{
+                    ...Styles.Flex2Columnas,
+                    alignItems: 'center',
+                    backgroundColor: 'red'
+                }}>
+                <View 
+                    style = {{
+                        flex: 1
+                        }}>
+                    <Text 
+                        style = {{
+                            fontSize: 20, 
+                            marginStart: 10
+                            }}>
+                            Bienvenido Usuario!
+                    </Text>
+                </View>
+                <View 
+                    style = {{
+                        flex: 1, 
+                        alignItems: 'flex-end'
+                        }}>
+                    <Image 
+                        style = {{
+                            height: 100, 
+                            width: 100
+                            }} 
+                            source={require("../Imagenes/UserIcon.png")}
+                    />
+                </View>
+            </View>
+
+            <View 
+                style = {{
+                    width: 150,
+                    height: 50,
+                    justifyContent: 'center',
+                    alignSelf: 'center',
+                    alignItems: 'center',
+                    backgroundColor: '#6764F2',
+                    margin: 10,
+                    borderRadius: 15,
+                    borderWidth: 1
+                }}
+            >
+                <Text
+                    style = {{
+                        fontSize: 25,
+                        }}
+                >
+                    SUMAS
+                </Text>
+            </View>
+
+            <View
+                style = {{
+                    flex: 2.5,
+                    backgroundColor: '#35339C'
+                }}>
+                    <View
+                        style = {{
+                            ...Styles.Flex2Columnas,
+                            backgroundColor: 'green'
+                        }}
+                    >
+                        <ButtonLevel text="Hola" onPress={() => Alert.alert("hola")}/>
+                        <Text>Hola</Text>
+                    </View>
+            </View>
+
+            <View
+                style = {{
+                    flex:1
+                }}
+            >
+
+            </View>
+
+        </View>
+    )
+}
+
+export default SumasLevels
