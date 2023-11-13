@@ -8,6 +8,7 @@ import RecoveryScreen from "./Screens/RecoveryScreen"
 import RecoveryMessage from "./Screens/RecoveryMessage"
 import HomeScreen from "./Screens/HomeScreen"
 import SumasLevels from "./Screens/SumasLevels"
+import Register from "./Screens/Register"
 
 const Stack = createNativeStackNavigator();
 
@@ -24,19 +25,27 @@ function Stacks() {
       <Stack.Screen
         name="Recovery"
         component={RecoveryScreen}
+        options={{headerTitle: ''}}
       />
       <Stack.Screen
         name="RecoveryM"
         component={RecoveryMessage}
+        options={{headerTitle: ''}}
       />
       <Stack.Screen
         name="Home"
         component={HomeScreen}
-        options={{headerShown: false}}
+        options={{headerTitle: ''}}
       />
       <Stack.Screen
         name="Sumas"
         component={SumasLevels}
+        options={{headerTitle: ''}}
+      />
+      <Stack.Screen
+        name="Register"
+        component={Register}
+        options={{headerTitle: ''}}
       />
     </Stack.Navigator>
   )

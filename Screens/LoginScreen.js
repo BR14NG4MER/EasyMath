@@ -24,6 +24,9 @@ const LoginScreen = () => {
             <TouchableOpacity onPress={() => navigation.navigate('Recovery')}>
             <Text style={{fontSize: 20, color: 'white', textAlign: 'center'}}>¿Olvidaste tu Contraseña?</Text>
             </TouchableOpacity>
+            <TouchableOpacity onPress={() => navigation.navigate('Register')}>
+            <Text style={{fontSize: 20, color: 'white', textAlign: 'center'}}>Crear Cuenta</Text>
+            </TouchableOpacity>
             <CustomButton largo='50%' backgroundColor='#57D993' text="Ingresar" color='#f1f1f1' onPress={() => navigation.navigate('Home')}/>
           </View>
         </ImageBackground>
