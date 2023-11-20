@@ -9,6 +9,7 @@ import RecoveryMessage from "./Screens/RecoveryMessage"
 import HomeScreen from "./Screens/HomeScreen"
 import SumasLevels from "./Screens/SumasLevels"
 import Register from "./Screens/Register"
+import Level from "./Screens/Level"
 
 const Stack = createNativeStackNavigator();
 
@@ -45,6 +46,11 @@ function Stacks() {
       <Stack.Screen
         name="Register"
         component={Register}
+        options={{headerTitle: ''}}
+      />
+      <Stack.Screen
+        name="Level"
+        component={Level}
         options={{headerTitle: ''}}
       />
     </Stack.Navigator>

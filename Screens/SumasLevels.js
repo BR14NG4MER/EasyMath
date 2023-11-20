@@ -6,7 +6,7 @@ import { useNavigation } from "@react-navigation/native"
 
 const SumasLevels = () => {
     
-    const navigator = useNavigation();
+    const navigation = useNavigation();
 
     return (
         <View 
@@ -76,7 +76,7 @@ const SumasLevels = () => {
                             justifyContent: 'space-around'
                         }}
                     >
-                        <ButtonLevel text="I"/>
+                        <ButtonLevel text="I" onPress={() => navigation.navigate('Level')}/>
                         <ButtonLevel text="II"/>
                         <ButtonLevel text="III"/>
                     </View>

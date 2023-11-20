@@ -88,6 +88,20 @@ const Register = () => {
                                 style={{
                                     fontSize:40,
                                     color:'#f1f1f1'
+                                    }}>Nombre de Usuario:</Text>
+                            <TextInput 
+                                style={{
+                                    width: '55%',
+                                    height: 40,
+                                    borderColor: 'black',
+                                    backgroundColor: '#ABA7A7',
+                                    borderWidth: 2,
+                                    textAlign: 'center'
+                                    }}/>
+                            <Text
+                                style={{
+                                    fontSize:40,
+                                    color:'#f1f1f1'
                                     }}>Contraseña:</Text>
                             <TextInput 
                                 style={{
@@ -102,7 +116,7 @@ const Register = () => {
                                 style={{
                                     fontSize:40,
                                     color:'#f1f1f1'
-                                    }}>Verificar Contraseña:</Text>
+                                }}>Verificar Contraseña:</Text>
                             <TextInput 
                                 style={{
                                     width: '55%',
@@ -126,44 +140,6 @@ const Register = () => {
                                     borderWidth: 2,
                                     textAlign: 'center'
                                     }}/>
-                            <Text
-                                style={{
-                                    fontSize:40,
-                                    color:'#f1f1f1'
-                                    }}>Fecha de Nacimiento:</Text>
-                            <View
-                                style={{
-                                    flexDirection: "row",
-                                    ustifyContent: 'space-around'
-                                }}>
-                                    <TextInput 
-                                        style={{
-                                            width: '15%',
-                                            height: 40,
-                                            borderColor: 'black',
-                                            backgroundColor: '#ABA7A7',
-                                            borderWidth: 2,
-                                            textAlign: 'center',
-                                            }}/>
-                                    <TextInput 
-                                        style={{
-                                            width: '15%',
-                                            height: 40,
-                                            borderColor: 'black',
-                                            backgroundColor: '#ABA7A7',
-                                            borderWidth: 2,
-                                            textAlign: 'center',
-                                            }}/>
-                                            <TextInput 
-                                        style={{
-                                            width: '15%',
-                                            height: 40,
-                                            borderColor: 'black',
-                                            backgroundColor: '#ABA7A7',
-                                            borderWidth: 2,
-                                            textAlign: 'center'
-                                            }}/>
-                            </View>
                             <CustomButton largo='50%' backgroundColor='#57D993' text="Crear" color='#f1f1f1' onPress={() => navigation.navigate('Home')}/>
                     </View>
                 </ScrollView>
