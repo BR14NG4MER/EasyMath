@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import { View, Text, Button, FlatList, TouchableOpacity, Alert } from 'react-native';
 import { CustomButton } from '../Componentes/Buttons';
-import { questions } from '../questions';
+import { questions } from '../Preguntas/questions';
 
 const QuizScreen = () => {
   const [currentQuestion, setCurrentQuestion] = useState(0);
