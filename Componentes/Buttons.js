@@ -80,7 +80,7 @@ const styles = StyleSheet.create({
         borderColor: '#C30303',
     },
     text: {
-        fontSize: 25,
+        fontSize: 20,
         fontWeight: 'bold'
     }
 }
