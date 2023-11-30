@@ -13,3 +13,8 @@ npm install @react-navigation/native-stack
 
 Dependencias para Expo
 npx expo install react-native-screens react-native-safe-area-contex
+------------------------------
+expo install expo-secure-store
+npm i react-query
+Axios
+npm install axios

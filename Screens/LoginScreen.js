@@ -14,8 +14,7 @@ const LoginScreen = () => {
         <ImageBackground source={require("../Imagenes/Fondo.png")} style={Styles.Fondo}>
           <View style={{ flex: 1, alignItems: 'center' }}>
             <Text style={{...Styles.title, margin: 10}}>EasyMath</Text>
-          </View>
-  
+          </View>  
           <View style={{ flex: 2, alignItems: 'center'}}>
             <Text style={{fontSize: 25, color: 'white', textAlign: 'center'}}>Nombre de Usuario/Correo Electronico</Text>
             <TextInput style={{width: '55%', height: 40, borderColor: 'black', backgroundColor: '#ABA7A7', borderWidth: 2, textAlign: 'center'}} placeholder='example@fomain.com' placeholderTextColor={'gray'} />

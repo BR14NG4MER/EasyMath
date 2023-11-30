@@ -1,16 +1,8 @@
 // QuizScreen.js
 import React, { useState, useEffect } from 'react';
-import { View, Text, Button } from 'react-native';
+import { View, Text, Button, FlatList, TouchableOpacity, Alert } from 'react-native';
 import { CustomButton } from '../Componentes/Buttons';
-
-const questions = [
-  {
-    question: 'Pregunta 1: ¿Cuál es la capital de Francia?',
-    options: ['Roma', 'París', 'Berlín', 'Londres'],
-    correctAnswer: 'París',
-  },
-  // Agrega más preguntas según sea necesario
-];
+import { questions } from '../questions';
 
 const QuizScreen = () => {
   const [currentQuestion, setCurrentQuestion] = useState(0);

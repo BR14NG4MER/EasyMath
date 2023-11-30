@@ -42,11 +42,14 @@ const Register = () => {
                             alignItems: 'center',
                             borderWidth: 1
                             }}>
+                                
                             <Text
                                 style={{
                                     fontSize:40,
                                     color:'#f1f1f1'
-                                    }}>Nombre:</Text>
+                                    }}>Nombre:
+                            </Text>
+
                             <TextInput 
                                 style={{
                                     width: '55%',
@@ -55,12 +58,16 @@ const Register = () => {
                                     backgroundColor: '#ABA7A7',
                                     borderWidth: 2,
                                     textAlign: 'center'
-                                    }}/>
+                                    }}
+                            />
+
                             <Text
                                 style={{
                                     fontSize:40,
                                     color:'#f1f1f1'
-                                    }}>Apellido:</Text>
+                                    }}>Apellido:
+                            </Text>
+
                             <TextInput 
                                 style={{
                                     width: '55%',
@@ -69,12 +76,16 @@ const Register = () => {
                                     backgroundColor: '#ABA7A7',
                                     borderWidth: 2,
                                     textAlign: 'center'
-                                    }}/>
+                                    }}
+                            />
+
                             <Text
                                 style={{
                                     fontSize:40,
                                     color:'#f1f1f1'
-                                    }}>Correo Electronico:</Text>
+                                    }}>Correo Electronico:
+                            </Text>
+
                             <TextInput 
                                 style={{
                                     width: '55%',
@@ -83,12 +94,15 @@ const Register = () => {
                                     backgroundColor: '#ABA7A7',
                                     borderWidth: 2,
                                     textAlign: 'center'
-                                    }}/>
+                                    }}
+                            />
                             <Text
                                 style={{
                                     fontSize:40,
                                     color:'#f1f1f1'
-                                    }}>Nombre de Usuario:</Text>
+                                    }}>Contraseña:
+                            </Text>
+
                             <TextInput 
                                 style={{
                                     width: '55%',
@@ -97,49 +111,8 @@ const Register = () => {
                                     backgroundColor: '#ABA7A7',
                                     borderWidth: 2,
                                     textAlign: 'center'
-                                    }}/>
-                            <Text
-                                style={{
-                                    fontSize:40,
-                                    color:'#f1f1f1'
-                                    }}>Contraseña:</Text>
-                            <TextInput 
-                                style={{
-                                    width: '55%',
-                                    height: 40,
-                                    borderColor: 'black',
-                                    backgroundColor: '#ABA7A7',
-                                    borderWidth: 2,
-                                    textAlign: 'center'
-                                    }}/>
-                            <Text
-                                style={{
-                                    fontSize:40,
-                                    color:'#f1f1f1'
-                                }}>Verificar Contraseña:</Text>
-                            <TextInput 
-                                style={{
-                                    width: '55%',
-                                    height: 40,
-                                    borderColor: 'black',
-                                    backgroundColor: '#ABA7A7',
-                                    borderWidth: 2,
-                                    textAlign: 'center'
-                                    }}/>
-                            <Text
-                                style={{
-                                    fontSize:40,
-                                    color:'#f1f1f1'
-                                    }}>Verificar Contraseña:</Text>
-                            <TextInput 
-                                style={{
-                                    width: '55%',
-                                    height: 40,
-                                    borderColor: 'black',
-                                    backgroundColor: '#ABA7A7',
-                                    borderWidth: 2,
-                                    textAlign: 'center'
-                                    }}/>
+                                    }}
+                            />
                             <CustomButton largo='50%' backgroundColor='#57D993' text="Crear" color='#f1f1f1' onPress={() => navigation.navigate('Home')}/>
                     </View>
                 </ScrollView>
