@@ -59,7 +59,7 @@ const SumasLevels = () => {
               fontSize: 40,
             }}
           >
-            SUMAS
+            RESTAS
           </Text>
         </View>
       </View>
@@ -77,8 +77,8 @@ const SumasLevels = () => {
               justifyContent: 'space-around'
             }}
           >
-            <ButtonLevel text="I" onPress={() => navigation.navigate('LevelS', { nivel: 'I' })} />
-            <ButtonLevel text="II" onPress={() => navigation.navigate('LevelS', { nivel: 'II' })} />
+            <ButtonLevel text="I" onPress={() => navigation.navigate('LevelR', { nivel: 'I' })} />
+            <ButtonLevel text="II" onPress={() => navigation.navigate('LevelR', { nivel: 'II' })} />
             <ButtonLevel text="III" onPress={() => alert("Proximamente")} />
           </View>
           <View
