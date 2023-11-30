@@ -9,7 +9,7 @@ const HomeScreen = () => {
   const navigation = useNavigation()
 
     return (
-      <View style={Styles.container}>
+      <View style={{...Styles.container}}>
         <View style={[Styles.Flex2Columnas, {alignItems: 'center'}]}>
           <View style={{flex: 1}}>
             <Text style={{fontSize: 20, marginStart: 10}}>Bienvenido Usuario!</Text>
@@ -36,7 +36,7 @@ const HomeScreen = () => {
         
         <View style={{flex: 1, justifyContent: 'center'}}>
           <View style={[Styles.row, {justifyContent: 'space-around'}]}>
-            <CustomButton backgroundColor='red' text="Tutorial" color='#f1f1f1' onPress={() => navigation.navigate('Home')}/>
+            <CustomButton backgroundColor='red' text="Tutorial" color='#f1f1f1' onPress={() => navigation.navigate('Tutorial')}/>
             <CustomButton backgroundColor='#57D993' text="Personaliza a Chippy" onPress={() => navigation.navigate('Home')}/>
           </View>
         </View>

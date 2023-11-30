@@ -10,6 +10,7 @@ import HomeScreen from "./Screens/HomeScreen"
 import SumasLevels from "./Screens/SumasLevels"
 import Register from "./Screens/Register"
 import Level from "./Screens/Level"
+import Tutoriales from "./Screens/Tutoriales"
 
 const Stack = createNativeStackNavigator();
 
@@ -51,6 +52,11 @@ function Stacks() {
       <Stack.Screen
         name="Level"
         component={Level}
+        options={{headerTitle: ''}}
+      />
+      <Stack.Screen
+        name="Tutorial"
+        component={Tutoriales}
         options={{headerTitle: ''}}
       />
     </Stack.Navigator>
