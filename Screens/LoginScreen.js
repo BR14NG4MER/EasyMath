@@ -1,8 +1,9 @@
 import * as React from "react"
-import { View, Text, TextInput, ImageBackground, TouchableOpacity } from 'react-native'
-import { CustomButton } from "../Componentes/Buttons"
+import { View, Text, TextInput, ImageBackground, TouchableOpacity, Button } from 'react-native'
+import { CustomButton, CustomButton2 } from "../Componentes/Buttons"
 import Styles from "../Componentes/Styles"
 import { useNavigation } from "@react-navigation/native"
+import { LinearGradient } from 'expo-linear-gradient';
 
 
 const LoginScreen = () => {
@@ -26,7 +27,7 @@ const LoginScreen = () => {
             <TouchableOpacity onPress={() => navigation.navigate('Register')}>
             <Text style={{fontSize: 20, color: 'white', textAlign: 'center'}}>Crear Cuenta</Text>
             </TouchableOpacity>
-            <CustomButton largo='50%' backgroundColor='#57D993' text="Ingresar" color='#f1f1f1' onPress={() => navigation.navigate('Home')}/>
+            <CustomButton2 largo={190} gradientColors={['#1167E9','#6FA0EB']}  text="Ingresar" color='#f1f1f1' onPress={() => navigation.navigate('Home')}/>
           </View>
         </ImageBackground>
       </View>

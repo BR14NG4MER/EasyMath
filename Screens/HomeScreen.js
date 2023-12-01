@@ -1,6 +1,6 @@
 import React from "react"
 import { View, Text, Image, ImageBackground } from 'react-native'
-import { CustomButton } from "../Componentes/Buttons"
+import { CustomButton, CustomButton2 } from "../Componentes/Buttons"
 import Styles from "../Componentes/Styles"
 import { useNavigation } from "@react-navigation/native"
 
@@ -54,19 +54,19 @@ const HomeScreen = () => {
         <View style={{flex: 4, backgroundColor: '#35339C'}}>
           <View style={{flex: 1, justifyContent: 'center'}}>
             <View style={[Styles.row, {justifyContent: 'space-around'}]}>
-              <CustomButton backgroundColor='#1167E9' text="Sumas" color='#f1f1f1' onPress={() => navigation.navigate('Sumas')}/>
-              <CustomButton backgroundColor='#1167E9' text="Restas" color='#f1f1f1' onPress={() => navigation.navigate('Restas')}/>
+              <CustomButton2 gradientColors={['#1167E9','#6FA0EB']}  text="Sumas" color='#f1f1f1' onPress={() => navigation.navigate('Sumas')}/>
+              <CustomButton2 gradientColors={['#1167E9','#6FA0EB']} text="Restas" color='#f1f1f1' onPress={() => navigation.navigate('Restas')}/>
             </View>
           </View>
           <View style={{flex: 1, justifyContent: 'center'}}>
             <View style={[Styles.row, {justifyContent: 'space-around'}]}>
-            <CustomButton backgroundColor='#1167E9' text="Multiplicacion" color='#f1f1f1' onPress={() => navigation.navigate('Multiplicacion')}/>
-            <CustomButton backgroundColor='#1167E9' text="Division" color='#f1f1f1' onPress={() => navigation.navigate('Division')}/>
+            <CustomButton2 gradientColors={['#1167E9','#6FA0EB']} text="Multiplicacion" color='#f1f1f1' onPress={() => navigation.navigate('Multiplicacion')}/>
+            <CustomButton2 gradientColors={['#1167E9','#6FA0EB']} text="Division" color='#f1f1f1' onPress={() => navigation.navigate('Division')}/>
             </View>
           </View>
           <View style={{flex: 1, justifyContent: 'center'}}>
             <View style={[Styles.row, {justifyContent: 'space-around'}]}>
-              <CustomButton backgroundColor='#1167E9' text="Exponentes" color='#f1f1f1' onPress={() => alert("Proximamente")}/>
+            <CustomButton2 gradientColors={['#1167E9','#6FA0EB']} text="Exponentes" color='#f1f1f1' onPress={() => alert("Proximamente")}/>
             </View>
           </View>
           <View style={[Styles.row, {justifyContent: 'space-around'}]}>

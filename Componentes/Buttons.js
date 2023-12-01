@@ -1,3 +1,4 @@
+import { LinearGradient } from "expo-linear-gradient"
 import React from "react"
 import { Text, TouchableOpacity, StyleSheet } from "react-native"
 
@@ -36,6 +37,33 @@ export function CustomButton(props) {
         </TouchableOpacity>
     )
 }
+
+export function CustomButton2(props) {
+    const { gradientColors, text, largo, color, onPress } = props;
+  
+    return (
+      <TouchableOpacity onPress={onPress}>
+        <LinearGradient
+          colors={gradientColors || ['#000000', '#434343']} // Usar gradientColors si está presente, de lo contrario, usar colores predeterminados
+          style={{
+            borderRadius: 10,
+            padding: 15,
+            width: largo,
+            alignItems: 'center',
+            justifyContent: 'center',
+            margin: 10
+          }}
+        >
+          <Text style={{ 
+                ...styles.text, 
+                color: color,
+                textShadowColor: 'black',
+                textShadowRadius: 10,
+                textShadowOffset: {width:-1,height:1}}}>{text}</Text>
+        </LinearGradient>
+      </TouchableOpacity>
+    );
+  }
 
 export function ButtonLevel(props) {
 
